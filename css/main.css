@@ -1,0 +1,148 @@
+/*CSS Reset*/
+
+:root {
+  --red: #e50914;
+  --black: #000;
+  --white: #fff;
+  --gray: #aaa;
+  --first-font: 'Arial Black';
+  --second-font: 'Trebuchet MS';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*base elm*/
+
+body {
+  background-color: var(--black);
+  font-family: 'Arial', Times, serif;
+  color: var(--white);
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container h2.logo {
+  color: var(--red);
+  font-family: var(--first-font);
+  font-size: 40px;
+  margin-left: 0.845rem;
+}
+
+header .container nav.mainMenu a {
+  color: var(--gray);
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+
+header .container nav.mainMenu a:hover {
+  color: var(--white);
+}
+
+/*Principal Movie*/
+
+.principalMovie {
+  font-size: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('../img/capa-tokyo-revengers.jpg');
+
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.principalMovie .description {
+  margin-top: 0.625rem;
+  margin-bottom: 2.5rem;
+}
+
+.principalMovie .title {
+  margin-top: 10%;
+  font-size: 2.5rem;
+  font-family: var(--second-font);
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: var(--white);
+
+  padding: 0.938rem 1.875rem;
+  margin-right: 0.938rem;
+  font-size: 0.75rem;
+  transition: 0.5s ease all;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btn i {
+  margin-right: 0.313rem;
+}
+
+.container {
+  margin-left: 1.25rem;
+}
+
+.principalMovie .container {
+  width: 70%;
+}
+
+.movieBox {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carouselMovies {
+  margin-top: 5px;
+}
